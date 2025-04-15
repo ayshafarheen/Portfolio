@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+	<nav class="">
+		<ul>
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		  <li><a href="#interests">Interests</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li>
+			<a href="aysha-farheen-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+		  </li>
+		</ul>
+	  </nav>
+	  <header class="text-center py-4">
+		<img src="42photo.jpg" alt="Aysha Farheen" class="profile-pic mb-3 rounded-circle img-fluid" style="max-width: 150px;">
+
+		<h1 class="bold">Aysha Farheen.</h1>
+		<h5>AI Developer | Data Enthusiast</h5>
+		<div class="social-icons">
+		  <a href="https://linkedin.com/in/ayshafarheen" target="_blank"><i class="bi bi-linkedin"></i></a>
+		  <a href="https://github.com/ayshafarheen" target="_blank"><i class="bi bi-github"></i></a>
+		</div>
+	  </header>
+
+
+  <section class="about" id="about">
+	<p class="text-center lead">
+		I infuse creativity into code to solve real-world problems and absorb knowledge to improve every next solution.
+	  </p>
+  </section>
+  <section class="values">
+	<h2 class="text-center">Values</h2>
+	<div class="values-container">
+	  <div class="value-box">Purpose</div>
+	  <div class="value-box">Creativity</div>
+	  <div class="value-box">Integrity</div>
+	  <div class="value-box">Respect</div>
+	</div>
+  </section>
+  <section class="projects py-5" id="projects">
+	<div class="container">
+	  <h2 class="text-center mb-5">Projects</h2>
+	  <div class="row g-4">
+
+		<div class="col-md-6 col-lg-4 mb-4">
+			<div class="card h-100 shadow-sm position-relative project-card">
+			  <video class="project-video" autoplay loop>
+				<source src="snapit.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+
+			  <div class="card-body">
+				<h5 class="card-title">Gamified Social Media Platform</h5>
+				<p class="card-text">
+				  Built a photo-sharing web application where users can apply filters to photos, add friends, join groups, chat in real-time, and participate in competitions. The platform incorporates gamification features like winning challenges and is fully moderated to ensure a safe environment.
+				</p>
+				<div class="mt-auto pt-3">
+				  <span class="badge me-1">HTML</span>
+				  <span class="badge me-1">CSS</span>
+				  <span class="badge me-1">Bulma</span>
+				  <span class="badge me-1">Firebase</span>
+				  <span class="badge me-1">JavaScript</span>
+				  <span class="badge me-1">UI/UX</span>
+				  <span class="badge me-1">Database querying</span>
+				  <span class="badge me-1">AdobeXD</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		<div class="col-md-6 col-lg-4 mb-4">
+		  <div class="card h-100 shadow-sm">
+			<div class="card-body">
+			  <h5 class="card-title">User Personalized Substitution Generation</h5>
+			  <p class="card-text">Designed and trained a model to recommend recipes based on user preferences. Integrated word embeddings to predict suitable ingredient substitutes, enhancing personalization and flexibility in recipe suggestions.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Python</span>
+				<span class="badge  me-1">Recommender Systems</span>
+				<span class="badge  me-1">Artificial Intelligence</span>
+				<span class="badge  me-1">Hugging Face</span>
+				<span class="badge  me-1">Embeddings</span>
+				<span class="badge  me-1"> Data Analysis</span>
+				<span class="badge  me-1"> Google Colab</span>
+				<span class="badge  me-1"> Natural Language Processing</span>
+				<span class="badge  me-1">Research</span>
+				<span class="badge ">Machine Learning</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4 mb-4">
+		  <div class="card h-100 shadow-sm">
+			<div class="card-body">
+			  <h5 class="card-title">C-based Graphics</h5>
+			  <p class="card-text"> A graphical program written in C that reads a 3D map from a file and renders a wireframe representation using isometric projection. Implemented custom algorithms for line drawing (Bresenham), projection, and keyboard controls. Utilized the MLX graphics library to handle pixel rendering and window management.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">C</span>
+				<span class="badge  me-1">Bresenham Algorithm</span>
+				<span class="badge  me-1">MLX</span>
+				<span class="badge  me-1">Isometric Projection</span>
+				<span class="badge  me-1">Graphics</span>
+				<span class="badge  me-1">Event Handling</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4">
+		  <div class="card h-100 shadow-sm">
+			<div class="card-body">
+			  <h5 class="card-title">Terminal Simulation</h5>
+			  <p class="card-text "> A fully functional Unix shell written in C, mimicking the behavior of Bash. It handles parsing and executing commands, including pipes, redirections, environment variable expansion, and built-in commands. Implemented a custom lexer, parser, and execution engine using system calls like fork, execve, and waitpid. Included robust signal handling and error management for a real terminal experience.
+			  </p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">C</span>
+				<span class="badge  me-1">Unix</span>
+				<span class="badge  me-1">System Calls</span>
+				<span class="badge  me-1">Shell Parsing</span>
+				<span class="badge  me-1">Pipes & Redirection</span>
+				<span class="badge  me-1">Signal Handling</span>
+				<span class="badge  me-1">Process Management</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4">
+		  <div class="card h-100 shadow-sm">
+			<div class="card-body">
+			  <h5 class="card-title">Sustainable Food Distribution Startup</h5>
+			  <p class="card-text"> A startup initiative designed to reduce food waste and promote sustainability by redistributing excess or near-expiry food from restaurants and households. The platform connects donors to recipients in their area, with scheduling and logistics handled by the providers. Integrated features include user authentication, food listing management, notifications, and data tracking for impact analysis.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Startup Concept</span>
+				<span class="badge  me-1">Sustainability</span>
+				<span class="badge  me-1">FoodTech</span>
+				<span class="badge  me-1">UX Design</span>
+				<span class="badge  me-1">Social Impact</span>
+				<span class="badge  me-1">Project Management</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4">
+		  <div class="card h-100 shadow-sm">
+			<div class="card-body">
+			  <h5 class="card-title">Multiplayer Gaming Platform</h5>
+			  <p class="card-text">A real-time web-based gaming platform featuring classic games like Pong and Tic-Tac-Toe with single and multiplayer modes. Implemented queue-based matchmaking, WebSocket-powered live gameplay, and interactive game rooms. Integrated Django Channels for backend communication and a responsive frontend using Bootstrap. Focused on security, responsive UI/UX, and minimal latency between clients.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Django</span>
+				<span class="badge  me-1">Bootstrap </span>
+				<span class="badge  me-1">Database Integration</span>
+				<span class="badge  me-1">User Authentication</span>
+				<span class="badge  me-1">Remote Player Support</span>
+				<span class="badge  me-1">Matchmaking</span>
+				<span class="badge  me-1">AI Opponent</span>
+				<span class="badge  me-1">Web Sockets</span>
+				<span class="badge  me-1">UI/UX</span>
+				<span class="badge  me-1">Docker</span>
+				<span class="badge  me-1">Figma</span>
+				<span class="badge  me-1">Web Components</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+  </section>
+
+  <section class="interests" id="interests">
+	<h2 class="text-center">Things I Enjoy</h2>
+	<div class="interests-fun-container">
+	  <span class="interest">🍰 Baking</span>
+	  <span class="interest">🚴 Cycling</span>
+	  <span class="interest">🎬 Video Editing</span>
+	  <span class="interest">🎥 Videography</span>
+	  <span class="interest">📚 Reading</span>
+	  <span class="interest">🧶 Crocheting</span>
+	</div>
+  </section>
+
+  </section>
+  <section class="contact" id="contact">
+	<h2 class="text-center">Contact</h2>
+	<div class="contact-info text-center">
+	  <span class="mr-2"><i class="bi bi-envelope-fill mr-2"></i></i> ayshafarheen01@gmail.com</span>
+	  <span> | </span>
+	  <span><i class="bi bi-telephone-fill mr-2 ml-2"></i> +971 55 8779077</span>
+	</div>
+  </section>
+
+
+  <footer>
+	<button onclick="topFunction()" id="topBtn" class="btn btn-dark" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+<script>
+  let topBtn = document.getElementById("topBtn");
+  window.onscroll = function () {
+    topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+  };
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+    <p>© 2025 Aysha Farheen. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  body {
+	font-family: 'Segoe UI', sans-serif;
+	line-height: 1.6;
+	background: #f4f4f4;
+	color: #333;
+	scroll-behavior: smooth;
+	padding-top: 60px; /* Leave space for sticky navbar */
+  }
+
+  /* NAVBAR */
+  nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #264653;
+	z-index: 1000;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  #topBtn {
+	position: fixed;
+	background-color: #E9C46A;;
+	color: #eee;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+  }
+
+  #topBtn:hover {
+	background-color: white;
+	color: #000;
+  }
+
+  nav ul {
+	display: flex;
+	justify-content: center;
+	padding: 15px 0 0 15px;
+	list-style: none;
+  }
+
+  nav ul li {
+	margin: 0 15px;
+  }
+
+  nav ul li a {
+	color: white;
+	text-decoration: none !important;
+	font-weight: bold;
+	display: inline-block;
+	transition: color 0.3s ease, transform 0.2s ease;
+}
+
+	nav ul li a:hover {
+	transform: scale(1.1);
+	color: #2A9D8F;
+  }
+
+  /* HEADER */
+  header {
+	text-align: center;
+	background: white;
+	color: #333;
+	padding: 40px 20px;
+	margin-bottom: 30px;
+  }
+
+  header h1 {
+	font-size: 2.5rem;
+  }
+
+  header p {
+	font-size: 1.2rem;
+	margin-top: 10px;
+  }
+
+  /* SECTIONS */
+  section {
+	margin-bottom: 40px;
+	padding: 0 20px;
+  }
+
+  h2 {
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	color: #264653;
+  }
+
+  .project {
+	background: #fff;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .project-card
+  {
+	cursor: pointer;;
+  }
+
+  /* FOOTER */
+  footer {
+	text-align: center;
+	padding: 20px;
+	background: #eee;
+	margin-top: 40px;
+  }
+
+  .social-icons a
+  {
+	cursor: pointer;
+	display: inline-block;
+	transition: color 0.3s ease,transform 0.3s ease;
+  }
+
+  .social-icons a:hover
+  {
+	transform: scale(1.2);
+	color: #2A9D8F;
+  }
+
+
+  .values-container {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;        /* Allows wrapping on smaller screens */
+	justify-content: center;
+	margin: 20px 0;
+  }
+
+  .value-box {
+	background: #264653;
+	color: white;
+	font-weight:bold;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+	border-radius: 5px;
+	flex: 1 1 150px;        /* Flex-grow, flex-shrink, and basis for responsiveness */
+  }
+
+  .badge
+  {
+	background-color: #E9C46A;
+  }
+
+  .bold
+  {
+	font-weight: bold;
+  }
+
+
+
+  .interests-fun-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+  }
+
+  .interest {
+	background: #264653;
+	color: white;
+	padding: 12px 20px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: default;
+  }
+
+  .profile-pic {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .social-icons a {
+	color: #333;
+	font-size: 1.8rem;
+	margin: 0 10px;
+	transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+	color: #2A9D8F; /* LinkedIn blue as example */
+	transform: scale(1.2);
+  }
+
+  .bi-envelope
+  {
+	color: #000;
+  }
+
+  .project-card {
+	overflow: hidden;
+  }
+
+  /* .project-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 1;
+	pointer-events: none;
+  } */
+
+  /* .project-card:hover .project-video {
+	opacity: 1;
+  } */
+  /* .project-card:hover .card-body {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  } */
+
+
+
+
