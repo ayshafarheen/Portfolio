@@ -166,12 +166,12 @@
   }
 
   .interest {
-	background: #264653;
-	color: white;
+	background: white;
+	color: black;
 	padding: 12px 20px;
 	font-size: 1.1rem;
 	font-weight: 600;
-	border-radius: 25px;
+	border-radius: 5px;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	cursor: default;
@@ -205,19 +205,7 @@
 	overflow: hidden;
   }
 
-  /* .project-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	z-index: 1;
-	pointer-events: none;
-  } */
-
+  /* .project
   /* .project-card:hover .project-video {
 	opacity: 1;
   } */
