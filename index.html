@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener("click", function (e) {
+		  e.preventDefault();
+		  const target = document.querySelector(this.getAttribute("href"));
+		  if (target) {
+			target.scrollIntoView({ behavior: "smooth" });
+		  }
+		});
+	  });
+	});
+  </script>
+
+<body>
+	<nav class="">
+		<ul>
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		  <li><a href="#interests">Interests</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li>
+			<a href="aysha-farheen-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+		  </li>
+		</ul>
+	  </nav>
+	  <header class="text-center py-4">
+		<img src="42photo.jpg" alt="Aysha Farheen" class="profile-pic mb-3 rounded-circle img-fluid" style="max-width: 150px;">
+
+		<h1 class="bold">Aysha Farheen.</h1>
+		<h5>AI Developer | Data Enthusiast</h5>
+		<div class="social-icons">
+		  <a href="https://linkedin.com/in/ayshafarheen" target="_blank"><i class="bi bi-linkedin"></i></a>
+		  <a href="https://github.com/ayshafarheen" target="_blank"><i class="bi bi-github"></i></a>
+		</div>
+	  </header>
+
+
+  <section class="about" id="about" data-aos="fade-in">
+	<p class="text-center lead">
+		I infuse creativity into code to solve real-world problems and absorb knowledge to improve every next solution.
+	  </p>
+  </section>
+  <section class="values" data-aos="fade-in">
+	<h2 class="text-center">Values</h2>
+	<div class="values-container">
+	  <div class="value-box">Purpose</div>
+	  <div class="value-box">Creativity</div>
+	  <div class="value-box">Integrity</div>
+	  <div class="value-box">Respect</div>
+	</div>
+  </section>
+  <section class="languages py-5" id="languages" data-aos="fade-in">
+	<div class="container text-center">
+	  <h2 class="mb-4">Languages / Tools</h2>
+	  <div class="row justify-content-center">
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="python.png" alt="Python" class="img-fluid" title="Python" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="js.png" alt="JavaScript" class="img-fluid" title="JavaScript" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="letter-c.png" alt="C" class="img-fluid" title="C" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="c-.png" alt="C++" class="img-fluid" title="C++" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="html.png" alt="HTML" class="img-fluid" title="HTML" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+		  <img src="css.png" alt="CSS" class="img-fluid" title="CSS" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="java.png" alt="java" class="img-fluid" title="java" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="database.png" alt="Firebase" class="img-fluid" title="Firebase" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="mysql.png" alt="mysql" class="img-fluid" title="mysql" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="xd.png" alt="AdobeXD" class="img-fluid" title="AdobeXD" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="figma.png" alt="Figma" class="img-fluid" title="Figma" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="django.png" alt="django" class="img-fluid" title="Django" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="social (1).png" alt="Git" class="img-fluid" title="Git" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="social.png" alt="Docker" class="img-fluid" title="Docker" />
+		</div>
+		<div class="col-3 col-sm-1 mb-3">
+			<img src="jira.png" alt="Jira" class="img-fluid" title="Jira" />
+		</div>
+	  </div>
+	</div>
+  </section>
+
+  <section class="projects" id="projects" >
+	<div class="container">
+	  <h2 class="text-center mb-5">Projects</h2>
+	  <div class="row g-4">
+
+		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+			<div class="card h-100 shadow-sm position-relative project-card">
+			  <video class="project-video" autoplay muted loop>
+				<source src="snapitt.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+
+			  <div class="card-body">
+				<h5 class="card-title">Gamified Social Media Platform</h5>
+				<p class="card-text">
+				  Built a photo-sharing web application where users can apply filters to photos, add friends, join groups, chat in real-time, and participate in competitions. The platform incorporates gamification features like winning challenges and is fully moderated to ensure a safe environment.
+				</p>
+				<div class="mt-auto pt-3">
+				  <span class="badge me-1">HTML</span>
+				  <span class="badge me-1">CSS</span>
+				  <span class="badge me-1">Bulma</span>
+				  <span class="badge me-1">Firebase</span>
+				  <span class="badge me-1">JavaScript</span>
+				  <span class="badge me-1">UI/UX</span>
+				  <span class="badge me-1">Database querying</span>
+				  <span class="badge me-1">AdobeXD</span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+		  <div class="card h-100 shadow-sm project-card">
+			<div class="card-body">
+			  <h5 class="card-title">User Personalized Substitution Generation</h5>
+			  <p class="card-text">Designed and trained a model to recommend recipes based on user preferences. Integrated word embeddings to predict suitable ingredient substitutes, enhancing personalization and flexibility in recipe suggestions.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Python</span>
+				<span class="badge  me-1">Recommender Systems</span>
+				<span class="badge  me-1">Artificial Intelligence</span>
+				<span class="badge  me-1">Hugging Face</span>
+				<span class="badge  me-1">Embeddings</span>
+				<span class="badge  me-1"> Data Analysis</span>
+				<span class="badge  me-1"> Google Colab</span>
+				<span class="badge  me-1"> Natural Language Processing</span>
+				<span class="badge  me-1">Research</span>
+				<span class="badge ">Machine Learning</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+		  <div class="card h-100 shadow-sm project-card">
+			<video class="project-video" autoplay muted loop>
+				<source src="fdf.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			<div class="card-body">
+			  <h5 class="card-title">C-based Graphics</h5>
+			  <p class="card-text"> A graphical program written in C that reads a 3D map from a file and renders a wireframe representation using isometric projection. Implemented custom algorithms for line drawing (Bresenham), projection, and keyboard controls. Utilized the MLX graphics library to handle pixel rendering and window management.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">C</span>
+				<span class="badge  me-1">Bresenham Algorithm</span>
+				<span class="badge  me-1">MLX</span>
+				<span class="badge  me-1">Isometric Projection</span>
+				<span class="badge  me-1">Graphics</span>
+				<span class="badge  me-1">Event Handling</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4" data-aos="fade-in">
+		  <div class="card h-100 shadow-sm project-card">
+			<video class="project-video" autoplay muted loop>
+				<source src="minishell.mov" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			<div class="card-body">
+			  <h5 class="card-title">Terminal Simulation</h5>
+			  <p class="card-text "> A fully functional Unix shell written in C, mimicking the behavior of Bash. It handles parsing and executing commands, including pipes, redirections, environment variable expansion, and built-in commands. Implemented a custom lexer, parser, and execution engine using system calls like fork, execve, and waitpid. Included robust signal handling and error management for a real terminal experience.
+			  </p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">C</span>
+				<span class="badge  me-1">Unix</span>
+				<span class="badge  me-1">System Calls</span>
+				<span class="badge  me-1">Shell Parsing</span>
+				<span class="badge  me-1">Pipes & Redirection</span>
+				<span class="badge  me-1">Signal Handling</span>
+				<span class="badge  me-1">Process Management</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4" data-aos="fade-in">
+		  <div class="card h-100 shadow-sm project-card">
+			<video class="project-video" autoplay muted loop>
+				<source src="ZAD.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			<div class="card-body">
+			  <h5 class="card-title">Sustainable Food Distribution Startup</h5>
+			  <p class="card-text"> A startup initiative designed to reduce food waste and promote sustainability by redistributing excess or near-expiry food from restaurants and households. The platform connects donors to recipients in their area, with scheduling and logistics handled by the providers. Integrated features include user authentication, food listing management, notifications, and data tracking for impact analysis.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Startup Concept</span>
+				<span class="badge  me-1">Sustainability</span>
+				<span class="badge  me-1">FoodTech</span>
+				<span class="badge  me-1">UX Design</span>
+				<span class="badge  me-1">Social Impact</span>
+				<span class="badge  me-1">Project Management</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-6 col-lg-4" data-aos="fade-in">
+		  <div class="card h-100 shadow-sm">
+			<video class="project-video" autoplay muted loop>
+				<source src="transcence.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			  </video>
+			<div class="card-body">
+			  <h5 class="card-title">Multiplayer Gaming Platform</h5>
+			  <p class="card-text">A real-time web-based gaming platform featuring classic games like Pong and Tic-Tac-Toe with single and multiplayer modes. Implemented queue-based matchmaking, WebSocket-powered live gameplay, and interactive game rooms. Integrated Django Channels for backend communication and a responsive frontend using Bootstrap. Focused on security, responsive UI/UX, and minimal latency between clients.</p>
+			  <div class="mt-auto pt-3">
+				<span class="badge  me-1">Django</span>
+				<span class="badge  me-1">Bootstrap </span>
+				<span class="badge  me-1">Database Integration</span>
+				<span class="badge  me-1">User Authentication</span>
+				<span class="badge  me-1">Remote Player Support</span>
+				<span class="badge  me-1">Matchmaking</span>
+				<span class="badge  me-1">AI Opponent</span>
+				<span class="badge  me-1">Web Sockets</span>
+				<span class="badge  me-1">UI/UX</span>
+				<span class="badge  me-1">Docker</span>
+				<span class="badge  me-1">Figma</span>
+				<span class="badge  me-1">Web Components</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+	  </div>
+	</div>
+  </section>
+
+  <section class="interests py-5" id="interests" data-aos="fade-up">
+	<div class="container text-center">
+	  <h2 class="mb-4">Things I Enjoy</h2>
+	  <div class="row justify-content-center g-4">
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="bake.png" alt="Baking" class="img-fluid mb-2" title="Baking" />
+			<p>Baking</p>
+		  </div>
+		</div>
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="cycling.png" alt="Cycling" class="img-fluid mb-2" title="Cycling" />
+			<p>Cycling</p>
+		  </div>
+		</div>
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="multimedia.png" alt="Video Editing" class="img-fluid mb-2" title="Video Editing" />
+			<p>Video Editing</p>
+		  </div>
+		</div>
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="camera.png" alt="Videography" class="img-fluid mb-2" title="Videography" />
+			<p>Videography</p>
+		  </div>
+		</div>
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="stack-of-books.png" alt="Reading" class="img-fluid mb-2" title="Reading" />
+			<p>Reading</p>
+		  </div>
+		</div>
+		<div class="col-6 col-sm-4 col-md-2">
+		  <div class="interest">
+			<img src="crochet.png" alt="Crocheting" class="img-fluid mb-2" title="Crocheting" />
+			<p>Crocheting</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+
+  </section>
+  <section class="contact" id="contact" data-aos="fade-in">
+	<h2 class="text-center">Contact</h2>
+	<div class="contact-info text-center">
+	  <span class="mr-2"><i class="bi bi-envelope-fill mr-2"></i></i> ayshafarheen01@gmail.com</span>
+	  <span> | </span>
+	  <span><i class="bi bi-telephone-fill mr-2 ml-2"></i> +971 55 8779077</span>
+	</div>
+  </section>
+
+
+  <footer>
+	<button onclick="topFunction()" id="topBtn" class="btn btn-dark" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+<script>
+  let topBtn = document.getElementById("topBtn");
+  window.onscroll = function () {
+    topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+  };
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+    <p>© 2025 Aysha Farheen. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+	AOS.init();
+  </script>
+</body>
+</html>
