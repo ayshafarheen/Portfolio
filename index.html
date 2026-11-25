@@ -3,401 +3,417 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Aysha Farheen | AI Engineer</title>
+  <meta name="description" content="Aysha Farheen, AI engineer in Abu Dhabi building LLM systems for healthcare. Projects, experience and contact.">
+  <meta property="og:title" content="Aysha Farheen | AI Engineer">
+  <meta property="og:description" content="AI engineer building real-world LLM systems for healthcare.">
+  <meta property="og:image" content="42photo.jpg">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Option 1: Include in HTML -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Styles for the new Experience section and project links.
+       Kept here so style.css does not need to change; move them into style.css if you prefer. -->
+  <style>
+    .experience .exp-item { max-width: 760px; margin: 0 auto 2rem; }
+    .experience .exp-head { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: baseline; }
+    .experience .exp-date { opacity: 0.65; font-size: 0.9rem; }
+    .experience ul { padding-left: 1.2rem; margin-top: 0.5rem; }
+    .experience li { margin-bottom: 0.3rem; }
+    .project-card .card-body { display: flex; flex-direction: column; }
+    .project-link { display: inline-block; margin-top: 0.75rem; font-weight: 600; }
+    .project-label { font-size: 0.8rem; opacity: 0.7; display: block; margin-bottom: 0.25rem; }
+    .stack-note { opacity: 0.8; margin-top: 0.5rem; }
+  </style>
 </head>
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-	  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-		anchor.addEventListener("click", function (e) {
-		  e.preventDefault();
-		  const target = document.querySelector(this.getAttribute("href"));
-		  if (target) {
-			target.scrollIntoView({ behavior: "smooth" });
-		  }
-		});
-	  });
-	});
-  </script>
 
 <body>
-	<nav class="">
-		<ul>
-		  <li><a href="#about">About</a></li>
-		  <li><a href="#projects">Projects</a></li>
-		  <li><a href="#interests">Interests</a></li>
-		  <li><a href="#contact">Contact</a></li>
-		  <li>
-			<a href="aysha-farheen-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-		  </li>
-		</ul>
-	  </nav>
-	  <header class="text-center py-4">
-		<img src="42photo.jpg" alt="Aysha Farheen" class="profile-pic mb-3 rounded-circle img-fluid" style="max-width: 150px;">
+  <nav class="">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <!-- Upload your latest CV with this file name -->
+        <a href="aysha-farheen-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </li>
+    </ul>
+  </nav>
 
-		<h1 class="bold">Aysha Farheen.</h1>
-		<h5>AI Developer | Data Enthusiast</h5>
-		<div class="social-icons">
-		  <a href="https://linkedin.com/in/ayshafarheen" target="_blank"><i class="bi bi-linkedin"></i></a>
-		  <a href="https://github.com/ayshafarheen" target="_blank"><i class="bi bi-github"></i></a>
-		</div>
-	  </header>
-
+  <header class="text-center py-4">
+    <img src="42photo.jpg" alt="Aysha Farheen" class="profile-pic mb-3 rounded-circle img-fluid" style="max-width: 150px;">
+    <h1 class="bold">Aysha Farheen.</h1>
+    <h5>AI Engineer @ VeloDoctor</h5>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/ayshafarheen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    </div>
+  </header>
 
   <section class="about" id="about" data-aos="fade-in">
-	<p class="text-center lead">
-		I infuse creativity into code to solve real-world problems and absorb knowledge to improve every next solution.
-	  </p>
+    <p class="text-center lead">
+      AI engineer who builds real-world LLM systems for healthcare, and has taught Python to complete beginners.
+    </p>
   </section>
+
   <section class="values" data-aos="fade-in">
-	<h2 class="text-center">Values</h2>
-	<div class="values-container">
-	  <div class="value-box">Purpose</div>
-	  <div class="value-box">Creativity</div>
-	  <div class="value-box">Integrity</div>
-	  <div class="value-box">Respect</div>
-	</div>
+    <h2 class="text-center">Values</h2>
+    <div class="values-container">
+      <div class="value-box">Purpose</div>
+      <div class="value-box">Creativity</div>
+      <div class="value-box">Integrity</div>
+      <div class="value-box">Respect</div>
+    </div>
   </section>
+
+  <!-- NEW: Experience -->
+  <section class="experience py-5" id="experience" data-aos="fade-in">
+    <div class="container">
+      <h2 class="text-center mb-5">Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h5 class="mb-0">AI Engineer | VeloDoctor</h5>
+          <span class="exp-date">Jun 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Shipped an AI clinical assistant to production and demoed it live to a partner hospital. Its multi-agent LLM system (LangGraph) turns patient records into summaries, treatment plans and reports for doctors to review and edit.</li>
+          <li>Grew report coverage from 1 medical specialty to 4: dental, dermatology, pediatrics and ophthalmology.</li>
+          <li>Reduced false medical-code matches between near-identical procedures by benchmarking embedding models in a RAG pipeline (ICD-10, CDT, CPT).</li>
+          <li>Re-architected the agent workflow as a state machine.</li>
+          <li>Moved the backend from Flask to FastAPI for performance and scalability; added streaming AWS inference and Dockerized deployment.</li>
+          <li>Built a reproducible data pipeline for model fine-tuning: scraping, EDA, DVC versioning and S3 storage.</li>
+          <li>Helped build VeloClaim, an AI tool that flags corrections and predicts denial risk before insurance claims are submitted (Kafka).</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h5 class="mb-0">Python Coding Mentor | 42 Abu Dhabi</h5>
+          <span class="exp-date">May 2025</span>
+        </div>
+        <ul>
+          <li>Taught Python from zero to school students with no coding experience, taking them through writing and debugging their first programs.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h5 class="mb-0">AI Intern | SPLCo Ltd</h5>
+          <span class="exp-date">Jun 2022 – Sep 2022</span>
+        </div>
+        <ul>
+          <li>Researched topic modeling to extract key themes from source code, feeding a research team's code-comprehension work.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <h5 class="mb-0">Web Application Developer | The Sparks Foundation</h5>
+          <span class="exp-date">Jun 2021 – Jul 2021</span>
+        </div>
+        <ul>
+          <li>Built a web banking app with real-time data and user login (JavaScript, Bulma, Firebase).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="languages py-5" id="languages" data-aos="fade-in">
-	<div class="container text-center">
-	  <h2 class="mb-4">Languages / Tools</h2>
-	  <div class="row justify-content-center">
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="python.png" alt="Python" class="img-fluid" title="Python" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="js.png" alt="JavaScript" class="img-fluid" title="JavaScript" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="letter-c.png" alt="C" class="img-fluid" title="C" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="c-.png" alt="C++" class="img-fluid" title="C++" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="html.png" alt="HTML" class="img-fluid" title="HTML" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-		  <img src="css.png" alt="CSS" class="img-fluid" title="CSS" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="java.png" alt="java" class="img-fluid" title="java" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="database.png" alt="Firebase" class="img-fluid" title="Firebase" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="mysql.png" alt="mysql" class="img-fluid" title="mysql" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="xd.png" alt="AdobeXD" class="img-fluid" title="AdobeXD" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="figma.png" alt="Figma" class="img-fluid" title="Figma" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="django.png" alt="django" class="img-fluid" title="Django" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="social (1).png" alt="Git" class="img-fluid" title="Git" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="social.png" alt="Docker" class="img-fluid" title="Docker" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="jira.png" alt="Jira" class="img-fluid" title="Jira" />
-		</div>
-		<div class="col-3 col-sm-1 mb-3">
-			<img src="power-bi.png" alt="Power BI" class="img-fluid" title="Power BI" />
-		</div>
-	  </div>
-	</div>
+    <div class="container text-center">
+      <h2 class="mb-4">Languages / Tools</h2>
+      <div class="row justify-content-center">
+        <div class="col-3 col-sm-1 mb-3"><img src="python.png" alt="Python" class="img-fluid" title="Python" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="js.png" alt="JavaScript" class="img-fluid" title="JavaScript" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="letter-c.png" alt="C" class="img-fluid" title="C" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="c-.png" alt="C++" class="img-fluid" title="C++" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="html.png" alt="HTML" class="img-fluid" title="HTML" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="css.png" alt="CSS" class="img-fluid" title="CSS" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="java.png" alt="Java" class="img-fluid" title="Java" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="database.png" alt="Firebase" class="img-fluid" title="Firebase" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="mysql.png" alt="MySQL" class="img-fluid" title="MySQL" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="xd.png" alt="Adobe XD" class="img-fluid" title="Adobe XD" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="figma.png" alt="Figma" class="img-fluid" title="Figma" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="django.png" alt="Django" class="img-fluid" title="Django" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="social (1).png" alt="Git" class="img-fluid" title="Git" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="social.png" alt="Docker" class="img-fluid" title="Docker" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="jira.png" alt="Jira" class="img-fluid" title="Jira" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="power-bi.png" alt="Power BI" class="img-fluid" title="Power BI" /></div>
+        <!-- NEW: current AI / backend tools (icons from the Devicon CDN) -->
+        <div class="col-3 col-sm-1 mb-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" class="img-fluid" title="PyTorch" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" class="img-fluid" title="FastAPI" /></div>
+        <div class="col-3 col-sm-1 mb-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="img-fluid" title="AWS" /></div>
+      </div>
+      <p class="stack-note">AI stack: Hugging Face · LangGraph · RAG · OpenAI &amp; Gemini APIs · Kafka · DVC</p>
+    </div>
   </section>
 
-  <section class="projects" id="projects" >
-	<div class="container">
-	  <h2 class="text-center mb-5">Projects</h2>
-	  <div class="row g-4">
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
 
-		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
-			<div class="card h-100 shadow-sm position-relative project-card">
-			  <video class="project-video" autoplay muted loop>
-				<source src="snapitt.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <source src="transcence.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Multiplayer Gaming Platform</h5>
+              <p class="card-text">A real-time web-based gaming platform featuring classic games like Pong and Tic-Tac-Toe with single and multiplayer modes, including an AI opponent. Implemented queue-based matchmaking, WebSocket-powered live gameplay and interactive game rooms. Integrated Django Channels for backend communication and a responsive frontend using Bootstrap. Focused on security, responsive UI/UX and minimal latency between clients.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">Django</span>
+                <span class="badge mr-1">Bootstrap</span>
+                <span class="badge mr-1">Database Integration</span>
+                <span class="badge mr-1">User Authentication</span>
+                <span class="badge mr-1">Remote Player Support</span>
+                <span class="badge mr-1">Matchmaking</span>
+                <span class="badge mr-1">AI Opponent</span>
+                <span class="badge mr-1">Web Sockets</span>
+                <span class="badge mr-1">UI/UX</span>
+                <span class="badge mr-1">Docker</span>
+                <span class="badge mr-1">Figma</span>
+                <span class="badge mr-1">Web Components</span>
+              </div>
+              <!-- TODO: replace with this project's repo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
-			  <div class="card-body">
-				<h5 class="card-title">Gamified Social Media Platform</h5>
-				<p class="card-text">
-				  Built a photo-sharing web application where users can apply filters to photos, add friends, join groups, chat in real-time, and participate in competitions. The platform incorporates gamification features like winning challenges and is fully moderated to ensure a safe environment.
-				</p>
-				<div class="mt-auto pt-3">
-				  <span class="badge me-1">HTML</span>
-				  <span class="badge me-1">CSS</span>
-				  <span class="badge me-1">Bulma</span>
-				  <span class="badge me-1">Firebase</span>
-				  <span class="badge me-1">JavaScript</span>
-				  <span class="badge me-1">UI/UX</span>
-				  <span class="badge me-1">Database querying</span>
-				  <span class="badge me-1">AdobeXD</span>
-				</div>
-			  </div>
-			</div>
-		  </div>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <div class="card-body">
+              <h5 class="card-title">User Personalized Substitution Generation</h5>
+              <p class="card-text">Designed and trained a model to recommend recipes based on user preferences. Integrated word embeddings to predict suitable ingredient substitutes, enhancing personalization and flexibility in recipe suggestions.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">Python</span>
+                <span class="badge mr-1">Recommender Systems</span>
+                <span class="badge mr-1">Artificial Intelligence</span>
+                <span class="badge mr-1">Hugging Face</span>
+                <span class="badge mr-1">Embeddings</span>
+                <span class="badge mr-1">Data Analysis</span>
+                <span class="badge mr-1">Google Colab</span>
+                <span class="badge mr-1">Natural Language Processing</span>
+                <span class="badge mr-1">Research</span>
+                <span class="badge mr-1">Machine Learning</span>
+              </div>
+              <!-- TODO: replace with this project's repo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm position-relative project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <source src="snapitt.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Gamified Social Media Platform</h5>
+              <p class="card-text">Built a photo-sharing web application where users can apply filters to photos, add friends, join groups, chat in real time and take part in competitions. The platform includes gamification features like winning challenges and is fully moderated to keep it safe.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">HTML</span>
+                <span class="badge mr-1">CSS</span>
+                <span class="badge mr-1">Bulma</span>
+                <span class="badge mr-1">Firebase</span>
+                <span class="badge mr-1">JavaScript</span>
+                <span class="badge mr-1">UI/UX</span>
+                <span class="badge mr-1">Database querying</span>
+                <span class="badge mr-1">Adobe XD</span>
+              </div>
+              <!-- TODO: replace with this project's repo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
-		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
-		  <div class="card h-100 shadow-sm project-card">
-			<div class="card-body">
-			  <h5 class="card-title">User Personalized Substitution Generation</h5>
-			  <p class="card-text">Designed and trained a model to recommend recipes based on user preferences. Integrated word embeddings to predict suitable ingredient substitutes, enhancing personalization and flexibility in recipe suggestions.</p>
-			  <div class="mt-auto pt-3">
-				<span class="badge  me-1">Python</span>
-				<span class="badge  me-1">Recommender Systems</span>
-				<span class="badge  me-1">Artificial Intelligence</span>
-				<span class="badge  me-1">Hugging Face</span>
-				<span class="badge  me-1">Embeddings</span>
-				<span class="badge  me-1"> Data Analysis</span>
-				<span class="badge  me-1"> Google Colab</span>
-				<span class="badge  me-1"> Natural Language Processing</span>
-				<span class="badge  me-1">Research</span>
-				<span class="badge ">Machine Learning</span>
-			  </div>
-			</div>
-		  </div>
-		</div>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <source src="zad.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Sustainable Food Distribution Startup</h5>
+              <p class="card-text">A startup initiative designed to reduce food waste and promote sustainability by redistributing excess or near-expiry food from restaurants and households. The platform connects donors to recipients in their area, with scheduling and logistics handled by the providers. Features include user authentication, food listing management, notifications and data tracking for impact analysis.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">Startup Concept</span>
+                <span class="badge mr-1">Sustainability</span>
+                <span class="badge mr-1">FoodTech</span>
+                <span class="badge mr-1">UX Design</span>
+                <span class="badge mr-1">Social Impact</span>
+                <span class="badge mr-1">Project Management</span>
+              </div>
+              <!-- TODO: replace with this project's repo or demo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
-		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
-		  <div class="card h-100 shadow-sm project-card">
-			<video class="project-video" autoplay muted loop>
-				<source src="fdf.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
-			<div class="card-body">
-			  <h5 class="card-title">C-based Graphics</h5>
-			  <p class="card-text"> A graphical program written in C that reads a 3D map from a file and renders a wireframe representation using isometric projection. Implemented custom algorithms for line drawing (Bresenham), projection, and keyboard controls. Utilized the MLX graphics library to handle pixel rendering and window management.</p>
-			  <div class="mt-auto pt-3">
-				<span class="badge  me-1">C</span>
-				<span class="badge  me-1">Bresenham Algorithm</span>
-				<span class="badge  me-1">MLX</span>
-				<span class="badge  me-1">Isometric Projection</span>
-				<span class="badge  me-1">Graphics</span>
-				<span class="badge  me-1">Event Handling</span>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
-			<div class="card h-100 shadow-sm project-card">
-			  <video class="project-video" autoplay muted loop>
-				<source src="buxx.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
-			  <div class="card-body">
-				<h5 class="card-title">Social Buzz Analytics</h5>
-				<p class="card-text">
-					Completed a virtual job simulation with Accenture via Forage, working as a Data Analyst for a simulated client: Social Buzz, a global social media platform. The project involved analyzing unstructured content data to identify the top five content categories by aggregate popularity. I performed data cleaning, transformation, and visualization using real-world techniques to generate insights</p>
-				<div class="mt-auto pt-3">
-				  <span class="badge me-1">Data Analytics</span>
-				  <span class="badge me-1">Data Cleaning</span>
-				  <span class="badge me-1">Data Transforming</span>
-				  <span class="badge me-1">Data visualization</span>
-				  <span class="badge me-1">PowerBI</span>
-				  <span class="badge me-1">Presentation</span>
-				  <span class="badge me-1">Content Insights</span>
-				  <span class="badge me-1">Sentiment Analysis</span>
-				  <span class="badge me-1">Data Cleaning</span>
-				</div>
-			  </div>
-			</div>
-		  </div>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <!-- Convert minishell.mov to minishell.mp4 so it plays in every browser; until then the .mov is used as a fallback -->
+              <source src="minishell.mp4" type="video/mp4">
+              <source src="minishell.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">Terminal Simulation</h5>
+              <p class="card-text">A fully functional Unix shell written in C, mimicking the behavior of Bash. It handles parsing and executing commands, including pipes, redirections, environment variable expansion and built-in commands. Implemented a custom lexer, parser and execution engine using system calls like fork, execve and waitpid, with robust signal handling and error management for a real terminal experience.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">C</span>
+                <span class="badge mr-1">Unix</span>
+                <span class="badge mr-1">System Calls</span>
+                <span class="badge mr-1">Shell Parsing</span>
+                <span class="badge mr-1">Pipes &amp; Redirection</span>
+                <span class="badge mr-1">Signal Handling</span>
+                <span class="badge mr-1">Process Management</span>
+              </div>
+              <!-- TODO: replace with this project's repo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <source src="fdf.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">C-based Graphics</h5>
+              <p class="card-text">A graphical program written in C that reads a 3D map from a file and renders a wireframe using isometric projection. Implemented custom algorithms for line drawing (Bresenham), projection and keyboard controls, using the MLX graphics library for pixel rendering and window management.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">C</span>
+                <span class="badge mr-1">Bresenham Algorithm</span>
+                <span class="badge mr-1">MLX</span>
+                <span class="badge mr-1">Isometric Projection</span>
+                <span class="badge mr-1">Graphics</span>
+                <span class="badge mr-1">Event Handling</span>
+              </div>
+              <!-- TODO: replace with this project's repo link -->
+              <a class="project-link" href="https://github.com/ayshafarheen" target="_blank" rel="noopener noreferrer"><i class="bi bi-github mr-1"></i>View code</a>
+            </div>
+          </div>
+        </div>
 
-		<div class="col-md-6 col-lg-4" data-aos="fade-in">
-		  <div class="card h-100 shadow-sm project-card">
-			<video class="project-video" autoplay muted loop>
-				<source src="minishell.mov" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
-			<div class="card-body">
-			  <h5 class="card-title">Terminal Simulation</h5>
-			  <p class="card-text "> A fully functional Unix shell written in C, mimicking the behavior of Bash. It handles parsing and executing commands, including pipes, redirections, environment variable expansion, and built-in commands. Implemented a custom lexer, parser, and execution engine using system calls like fork, execve, and waitpid. Included robust signal handling and error management for a real terminal experience.
-			  </p>
-			  <div class="mt-auto pt-3">
-				<span class="badge  me-1">C</span>
-				<span class="badge  me-1">Unix</span>
-				<span class="badge  me-1">System Calls</span>
-				<span class="badge  me-1">Shell Parsing</span>
-				<span class="badge  me-1">Pipes & Redirection</span>
-				<span class="badge  me-1">Signal Handling</span>
-				<span class="badge  me-1">Process Management</span>
-			  </div>
-			</div>
-		  </div>
-		</div>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-in">
+          <div class="card h-100 shadow-sm project-card">
+            <video class="project-video" autoplay muted loop playsinline preload="metadata">
+              <source src="buxx.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <span class="project-label">Job simulation · Accenture via Forage</span>
+              <h5 class="card-title">Social Buzz Analytics</h5>
+              <p class="card-text">Worked as a data analyst for a simulated client, Social Buzz, a global social media platform. Analyzed unstructured content data to find the top five content categories by total popularity, cleaning, transforming and visualizing the data to generate insights for a client-facing presentation.</p>
+              <div class="mt-auto pt-3">
+                <span class="badge mr-1">Data Analytics</span>
+                <span class="badge mr-1">Data Cleaning</span>
+                <span class="badge mr-1">Data Transforming</span>
+                <span class="badge mr-1">Data Visualization</span>
+                <span class="badge mr-1">Power BI</span>
+                <span class="badge mr-1">Presentation</span>
+                <span class="badge mr-1">Content Insights</span>
+                <span class="badge mr-1">Sentiment Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<div class="col-md-6 col-lg-4" data-aos="fade-in">
-		  <div class="card h-100 shadow-sm project-card">
-			<video class="project-video" autoplay muted loop>
-				<source src="zad.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
-			<div class="card-body">
-			  <h5 class="card-title">Sustainable Food Distribution Startup</h5>
-			  <p class="card-text"> A startup initiative designed to reduce food waste and promote sustainability by redistributing excess or near-expiry food from restaurants and households. The platform connects donors to recipients in their area, with scheduling and logistics handled by the providers. Integrated features include user authentication, food listing management, notifications, and data tracking for impact analysis.</p>
-			  <div class="mt-auto pt-3">
-				<span class="badge  me-1">Startup Concept</span>
-				<span class="badge  me-1">Sustainability</span>
-				<span class="badge  me-1">FoodTech</span>
-				<span class="badge  me-1">UX Design</span>
-				<span class="badge  me-1">Social Impact</span>
-				<span class="badge  me-1">Project Management</span>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
-		<div class="col-md-6 col-lg-4" data-aos="fade-in">
-		  <div class="card h-100 shadow-sm">
-			<video class="project-video" autoplay muted loop>
-				<source src="transcence.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
-			<div class="card-body">
-			  <h5 class="card-title">Multiplayer Gaming Platform</h5>
-			  <p class="card-text">A real-time web-based gaming platform featuring classic games like Pong and Tic-Tac-Toe with single and multiplayer modes. Implemented queue-based matchmaking, WebSocket-powered live gameplay, and interactive game rooms. Integrated Django Channels for backend communication and a responsive frontend using Bootstrap. Focused on security, responsive UI/UX, and minimal latency between clients.</p>
-			  <div class="mt-auto pt-3">
-				<span class="badge  me-1">Django</span>
-				<span class="badge  me-1">Bootstrap </span>
-				<span class="badge  me-1">Database Integration</span>
-				<span class="badge  me-1">User Authentication</span>
-				<span class="badge  me-1">Remote Player Support</span>
-				<span class="badge  me-1">Matchmaking</span>
-				<span class="badge  me-1">AI Opponent</span>
-				<span class="badge  me-1">Web Sockets</span>
-				<span class="badge  me-1">UI/UX</span>
-				<span class="badge  me-1">Docker</span>
-				<span class="badge  me-1">Figma</span>
-				<span class="badge  me-1">Web Components</span>
-			  </div>
-			</div>
-		  </div>
-		</div>
-
-	  </div>
-	</div>
+      </div>
+    </div>
   </section>
 
   <section class="interests py-5" id="interests" data-aos="fade-up">
-	<div class="container text-center">
-	  <h2 class="mb-4">Things I Enjoy</h2>
-	  <div class="row justify-content-center g-4">
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="bake.png" alt="Baking" class="img-fluid mb-2" title="Baking" />
-			<p>Baking</p>
-		  </div>
-		</div>
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="cycling.png" alt="Cycling" class="img-fluid mb-2" title="Cycling" />
-			<p>Cycling</p>
-		  </div>
-		</div>
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="multimedia.png" alt="Video Editing" class="img-fluid mb-2" title="Video Editing" />
-			<p>Video Editing</p>
-		  </div>
-		</div>
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="camera.png" alt="Videography" class="img-fluid mb-2" title="Videography" />
-			<p>Videography</p>
-		  </div>
-		</div>
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="stack-of-books.png" alt="Reading" class="img-fluid mb-2" title="Reading" />
-			<p>Reading</p>
-		  </div>
-		</div>
-		<div class="col-6 col-sm-4 col-md-2">
-		  <div class="interest">
-			<img src="crochet.png" alt="Crocheting" class="img-fluid mb-2" title="Crocheting" />
-			<p>Crocheting</p>
-		  </div>
-		</div>
-	  </div>
-	</div>
+    <div class="container text-center">
+      <h2 class="mb-4">Things I Enjoy</h2>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="bake.png" alt="Baking" class="img-fluid mb-2" title="Baking" /><p>Baking</p></div></div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="cycling.png" alt="Cycling" class="img-fluid mb-2" title="Cycling" /><p>Cycling</p></div></div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="multimedia.png" alt="Video Editing" class="img-fluid mb-2" title="Video Editing" /><p>Video Editing</p></div></div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="camera.png" alt="Videography" class="img-fluid mb-2" title="Videography" /><p>Videography</p></div></div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="stack-of-books.png" alt="Reading" class="img-fluid mb-2" title="Reading" /><p>Reading</p></div></div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4"><div class="interest"><img src="crochet.png" alt="Crocheting" class="img-fluid mb-2" title="Crocheting" /><p>Crocheting</p></div></div>
+      </div>
+    </div>
   </section>
 
+  <!-- Was a second id="contact"; renamed so the Contact link has one target -->
+  <section class="contact-form py-5" id="message" data-aos="fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Send me a message</h2>
+      <form action="https://formspree.io/f/mrbpveqp" method="POST" class="mx-auto" style="max-width: 600px;">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" name="_replyto" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message-text">Your Message</label>
+          <textarea class="form-control" name="message" id="message-text" rows="5" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="w-100 btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-
-  <section class="contact-form py-5" id="contact" data-aos="fade-in">
-	  <div class="container">
-		  <h2 class="text-center mb-4">Send me a message</h2>
-	  <form action="https://formspree.io/f/mrbpveqp" method="POST" class="mx-auto" style="max-width: 600px;">
-		<div class="form-group">
-			<label for="name">Your Name</label>
-		  <input type="text" class="form-control" name="name" id="name" required>
-		</div>
-		<div class="form-group">
-			<label for="email">Your Email</label>
-			<input type="email" class="form-control" name="_replyto" id="email" required>
-		</div>
-		<div class="form-group">
-			<label for="message">Your Message</label>
-			<textarea class="form-control" name="message" id="message" rows="5" required></textarea>
-		</div>
-		<div class="text-center">
-			<button type="submit" class="w-100 btn btn-primary">Send</button>
-		  </div>
-	  </form>
-	</div>
-</section>
-
-</section>
-<section class="contact" id="contact" data-aos="fade-in">
-  <h2 class="text-center">Contact</h2>
-  <div class="contact-info text-center">
-	<span class="mr-2"><i class="bi bi-envelope-fill mr-2"></i></i> ayshafarheen01@gmail.com</span>
-	<span> | </span>
-	<span><i class="bi bi-telephone-fill mr-2 ml-2"></i> +971 55 8779077</span>
-  </div>
-
-</section>
-
-
-
-
+  <section class="contact" id="contact" data-aos="fade-in">
+    <h2 class="text-center">Contact</h2>
+    <div class="contact-info text-center">
+      <span class="mr-2"><i class="bi bi-envelope-fill mr-2"></i>ayshafarheen01@gmail.com</span>
+      <span> | </span>
+      <span><i class="bi bi-telephone-fill mr-2 ml-2"></i>+971 55 8779077</span>
+    </div>
+  </section>
 
   <footer>
-	<button onclick="topFunction()" id="topBtn" class="btn btn-dark" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
-
-<script>
-  let topBtn = document.getElementById("topBtn");
-  window.onscroll = function () {
-    topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
-  };
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-</script>
-
-    <p>© 2025 Aysha Farheen. All rights reserved.</p>
+    <button onclick="topFunction()" id="topBtn" class="btn btn-dark" title="Go to top" aria-label="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+    <p>© <span id="year">2026</span> Aysha Farheen. All rights reserved.</p>
   </footer>
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-	AOS.init();
+    // Smooth scrolling for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener("click", function (e) {
+        var target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    // Back-to-top button
+    var topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      topBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // Footer year stays current
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Fade-in animations (guarded so the page still works if the library fails to load)
+    if (window.AOS) { AOS.init(); }
   </script>
 </body>
 </html>
